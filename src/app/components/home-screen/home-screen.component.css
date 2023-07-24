@@ -3,6 +3,8 @@
   grid-template-areas: "profile about";
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 100vh;
+  max-width: 1500px;
+  margin: auto;
 }
 
 .container-img {
@@ -13,7 +15,7 @@
   justify-content: center;
 }
 .container-img img {
-  width: 500px;
+  width: 400px;
   margin-top: 50px;
 }
 
