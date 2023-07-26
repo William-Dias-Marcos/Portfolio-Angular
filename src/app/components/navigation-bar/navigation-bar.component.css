@@ -2,7 +2,7 @@
   height: 8vh;
   width: 100%;
   color: #c93555;
-
+  background-color: #1c1c1c;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -42,7 +42,7 @@
 
 @media (max-width: 850px) {
   .nav {
-    position: relative;
+    position: fixed;
   }
 
   .nav > .nav-btn {
