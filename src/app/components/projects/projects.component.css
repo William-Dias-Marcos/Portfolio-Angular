@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
 #projects {
   display: flex;
   flex-direction: column;
@@ -22,6 +24,7 @@
 .project img {
   width: 600px;
   border-radius: 10px;
+  border: 2px solid #00000028;
 }
 .project h3 {
   text-align: center;
@@ -35,6 +38,9 @@
 .project a:hover {
   color: #fff;
   transition: 1s;
+}
+.project a i{
+  font-size: 15px;
 }
 .project p {
   max-width: 600px;
@@ -50,7 +56,7 @@
 .project li {
   list-style: none;
   padding: 10px 10px 0px 10px;
-  color: #c93555;
+  color: #fff;
 }
 
 .wrap {
