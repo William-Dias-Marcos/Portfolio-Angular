@@ -1,0 +1,31 @@
+<div class="card bg-base-100 w-96 shadow-xl p-2">
+  <figure>
+    <img [src]="project().image" [alt]="project().name" />
+  </figure>
+  <div class="card-body">
+    <div class="flex justify-between items-center">
+      <a
+        [href]="project().website"
+        target="_blank"
+        class="flex items-center gap-1 tooltip"
+        data-tip="Visualizar projeto.">
+        <h2 class="card-title">{{ project().name }}</h2>
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </a>
+
+      <a
+        [href]="project().repository"
+        target="_blank"
+        class="tooltip"
+        data-tip="Visualizar repositório.">
+        <i class="fa-brands fa-github fa-lg"></i>
+      </a>
+    </div>
+    <p>{{ project().description }}</p>
+    <div class="card-actions justify-end">
+      @for (technology of project().technologies; track $index) {
+        <div class="badge badge-outline">{{ technology }}</div>
+      }
+    </div>
+  </div>
+</div>
