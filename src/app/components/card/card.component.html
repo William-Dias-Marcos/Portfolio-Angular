@@ -1,6 +1,6 @@
-<div class="card bg-base-100 w-96 shadow-xl p-2">
+<div class="card bg-base-100 w-96 shadow-xl">
   <figure>
-    <img [src]="project().image" [alt]="project().name" />
+    <img [src]="project().image" [alt]="project().name" class="p-2" />
   </figure>
   <div class="card-body">
     <div class="flex justify-between items-center">
@@ -16,7 +16,7 @@
       <a
         [href]="project().repository"
         target="_blank"
-        class="tooltip"
+        class="tooltip tooltip-left"
         data-tip="Visualizar repositório.">
         <i class="fa-brands fa-github fa-lg"></i>
       </a>
