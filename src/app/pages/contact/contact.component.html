@@ -1,0 +1,28 @@
+<div class="flex justify-center p-2">
+  <form [formGroup]="contactForm" class="flex flex-col gap-3 w-full max-w-md">
+    <input type="hidden" name="_captcha" value="false" />
+    <label class="input input-bordered flex items-center gap-2">
+      <i class="fa-regular fa-envelope"></i>
+      <input
+        id="email"
+        type="email"
+        class="grow"
+        placeholder="Email"
+        formControlName="email" />
+    </label>
+
+    <textarea
+      id="message"
+      class="textarea textarea-bordered h-32"
+      placeholder="Mensagem"
+      formControlName="message"></textarea>
+
+    <button
+      type="submit"
+      class="btn"
+      (click)="onSubmit()"
+      [disabled]="contactForm.invalid">
+      Enviar
+    </button>
+  </form>
+</div>
