@@ -1,8 +1,13 @@
-<div class="card bg-base-100 w-96 shadow-xl">
+<div class="card bg-base-100 max-w-96 shadow-xl">
   <figure>
-    <img [src]="project().image" [alt]="project().name" class="p-2" />
+    <a [href]="project().website" target="_blank">
+      <img
+        [src]="project().image"
+        [alt]="project().name"
+        class="rounded-b-lg" />
+    </a>
   </figure>
-  <div class="card-body">
+  <div class="card-body px-3 py-5">
     <div class="flex justify-between items-center">
       <a
         [href]="project().website"
@@ -21,7 +26,7 @@
         <i class="fa-brands fa-github fa-lg"></i>
       </a>
     </div>
-    <p>{{ project().description }}</p>
+    <p class="p-1">{{ project().description }}</p>
     <div class="card-actions justify-end">
       @for (technology of project().technologies; track $index) {
         <div class="badge badge-outline">{{ technology }}</div>
