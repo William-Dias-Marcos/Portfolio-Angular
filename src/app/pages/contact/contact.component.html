@@ -21,8 +21,21 @@
       type="submit"
       class="btn"
       (click)="onSubmit()"
-      [disabled]="contactForm.invalid">
-      Enviar
+      [disabled]="contactForm.invalid || loading">
+      @if (loading) {
+        <span class="loading loading-spinner loading-xs"></span>
+        Enviando...
+      } @else {
+        Enviar
+      }
     </button>
   </form>
 </div>
+@if (showMessage) {
+  <div
+    class="toast toast-end toast-middle transition-all duration-500 ease-out transform translate-y-5 opacity-0 animate-fade-in">
+    <div class="alert alert-success shadow-lg">
+      <span>Email enviado com sucesso!</span>
+    </div>
+  </div>
+}
