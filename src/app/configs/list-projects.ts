@@ -29,4 +29,13 @@ export const ListProject: iProject[] = [
     website: 'https://onlinecardgenerator.netlify.app/ ',
     repository: 'https://github.com/William-Dias-Marcos/Card-Generator-Angular',
   },
+  {
+    name: 'Linktree',
+    description:
+      'Projeto que contém diversos links em uma única página personalizada, facilitando o acesso a conteúdos, redes sociais e sites importantes para o usuário.',
+    technologies: ['HTML', 'CSS'],
+    image: 'projects/linktree.png',
+    website: 'https://linktree-wdm.vercel.app/',
+    repository: 'https://github.com/William-Dias-Marcos/LinkTree',
+  },
 ];
