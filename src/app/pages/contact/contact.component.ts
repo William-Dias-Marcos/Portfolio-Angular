@@ -6,12 +6,12 @@ import {
 } from '@angular/forms';
 
 import { ContactService } from '../../services/contact/contact.service';
-import { CommonModule } from '@angular/common';
+
 import { finalize, switchMap, timer } from 'rxjs';
 
 @Component({
   selector: 'app-contact',
-  imports: [ReactiveFormsModule, CommonModule],
+  imports: [ReactiveFormsModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css',
 })
